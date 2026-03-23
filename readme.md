@@ -10,12 +10,12 @@ In this task, we'll be applying what we have learned in the **Airflow** automisa
 - We have created **`superset`** dashboards in our downstream tasks which can be utilised to analyse the event data at any time, and periodically updated data will allow us to keep track of the events that happen during the tournament.
 
 
-### Parsed Data 🗃️
+### VGC event data 🗃️
 
-Each event on **`rk9.gg`** has a unique identifier, for example the Sydney regional is **SY02sMDp6JmCcnCynSLn**. For each identified, we have a **player roster**, which contains
+Each event on **`rk9.gg`** has a unique identifier, for example the Sydney regional is **SY02sMDp6JmCcnCynSLn**. For each identifier, we have a **player roster**, which contains
 the player sign up details (player identity data & their teamsheet) and the **player pairings** for each round. The player sign up sheet is fixed before the event begins, but 
-the team sheet is not public day 1 of the event, so the parsed data needs to be updated. The same applies to player pairings; which are updated after each round, so automisation
-using airflow will be benefitial to start the scripts at specific intervals and overwrite the existing older versions of the data for this event.
+the team sheet is not public day 1 of the event, so the parsed data needs to be parsed periodically and updated once the data is available. The same applies to player pairings; which are updated after each round, so automisation
+using airflow will be useful to start the scripts at specific intervals and overwrite the existing older versions of the data for this event, whenever data becomes available.
 
 [Sample Roster](https://rk9.gg/roster/SY02sMDp6JmCcnCynSLn) | [Sample Teamlist](https://rk9.gg/teamlist/public/SY02sMDp6JmCcnCynSLn/azP9QknuV5I6UWQyNCMw) | [Sample Pairings](https://rk9.gg/pairings/SY02sMDp6JmCcnCynSLn)
 
@@ -23,7 +23,7 @@ using airflow will be benefitial to start the scripts at specific intervals and 
 
 The scripts run on an existing **airflow** cluster and utilise the local **PostgresHook** : `postgres_local` (which is our local postgres DB)
 
-### Taskflow Setup 📋
+### Airflow Tasks Setup 📋
 
 The taskflow is very simple in this case
 
