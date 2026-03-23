@@ -61,6 +61,22 @@ dag = DAG(
 
 ### Files 📃
 
+```bash
+├── create_tables.py
+├── dags
+│   ├── get_vgc.py
+│   └── readme.md
+├── plugins
+│   └── vgcrk9
+│       ├── parse_rk9.py
+│       ├── readme.md
+│       └── vgcOperator.py
+├── readme.md
+├── tournament_pairings.png
+├── tournament_players.png
+└── tournament_teams.png
+```
+
 We use a single dag file stored in folder `/dags/`, the default folder where **Airflow** searched DAGS.
 
 - **`create_tables.py`** : Create new tables in which data is stored after parsing (if they don't exist)
