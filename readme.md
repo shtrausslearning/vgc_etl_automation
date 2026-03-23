@@ -93,6 +93,9 @@ The images below show the final result of the **airflow** job, storing the relev
 ![](tournament_teams.png)
 ![](tournament_pairings.png)
 
-And the dataset can be downloaded on [kaggle](https://www.kaggle.com/datasets/shtrausslearning/pokemonvgc), which is updated only periodically.
+### Links 🔗
+
+- A [kaggle notebook](https://www.kaggle.com/code/shtrausslearning/vgc-analysis) containing a sample data aggregation using **polars** using the existing table data can be found on kaggle
+- And the dataset can be downloaded on [kaggle](https://www.kaggle.com/datasets/shtrausslearning/pokemonvgc), which is updated only periodically.
 
 
