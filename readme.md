@@ -77,4 +77,6 @@ The images below show the final result of the **airflow** job, storing the relev
 ![](tournament_teams.png)
 ![](tournament_pairings.png)
 
+And the dataset can be downloaded on [kaggle](https://www.kaggle.com/datasets/shtrausslearning/pokemonvgc), which is updated only periodically.
+
 
