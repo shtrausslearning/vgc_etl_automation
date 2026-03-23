@@ -1,1 +1,0 @@
-# vgc_etl_automation
