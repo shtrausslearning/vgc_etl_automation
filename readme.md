@@ -21,7 +21,7 @@ using airflow will be useful to start the scripts at specific intervals and over
 
 ### Requirements 📜
 
-The scripts run on an existing **airflow** cluster and utilise the local **PostgresHook** : `postgres_local` (which is our local postgres DB)
+The scripts run on an existing **airflow** cluster (you can use a preset [docker configuration](https://github.com/mrugankray/Big-Data-Cluster/tree/main), which contains both **postgres**, **pgadmin** and **airflow**)    and utilise the local **PostgresHook** : `postgres_local` (which is our local postgres DB)
 
 ### Airflow Tasks Setup 📋
 
